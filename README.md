@@ -7,6 +7,39 @@ Step 1:
 Create a Django project named weatherapp
 
 
+step 2:
+Create a Weather App
+
+
+step 3:
+
+setup a weatherAPI
+
+For this example, we’ll use the OpenWeatherMap API, but you can choose any other API. You need to sign up for an API key on their website.
+
+
+step 4:
+
+Configure settings
+
+
+STEP 5:
+
+create views and templates
+
+
+
+step 6: Configure URL routing
+
+
+
+step 7:
+
+
+Run the server..
+
+
+
 
 
 
