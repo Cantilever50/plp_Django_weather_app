@@ -1,0 +1,24 @@
+<!-- weather/templates/weather/weather.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather in {{ weather.city }}</h1>
+    <img src="http://openweathermap.org/img/wn/{{ weather.icon }}@2x.png" alt="Weather Icon">
+    <p><strong>Temperature:</strong> {{ weather.temperature }}°C</p>
+    <p><strong>Description:</strong> {{ weather.description }}</p>
+    <p><strong>Humidity:</strong> {{ weather.humidity }}%</p>
+    <p><strong>Pressure:</strong> {{ weather.pressure }} hPa</p>
+    <p><strong>Wind Speed:</strong> {{ weather.wind_speed }} m/s</p>
+
+    <form method="get">
+        <label for="city">Enter city name:</label>
+        <input type="text" id="city" name="city" value="{{ weather.city }}">
+        <button type="submit">Get Weather</button>
+    </form>
+</body>
+</html>
